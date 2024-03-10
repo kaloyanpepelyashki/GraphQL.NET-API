@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SoZt+M50UM1lDGgOWmyee7UwTV48i94FW+Ep/c8V/zVe+tdCRs73RwVwmj9FvXRi4IA2fT3w20JFpjSweO2s8A==",
+  "dgSpecHash": "7G5VlkkfXhFbhEcoWxy2P8jNqe/xYpRmGipyg2MYXtjXQpqsn6FoWLnEDPtqI7cj9DtPS534Pg9bROzloKYQ2g==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj",
+  "projectFilePath": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kaloyan\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Kaloyan\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -42,6 +42,7 @@
     "C:\\Users\\Kaloyan\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Kaloyan\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\Kaloyan\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\Kaloyan\\.nuget\\packages\\splat\\14.8.12\\splat.14.8.12.nupkg.sha512",
     "C:\\Users\\Kaloyan\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Kaloyan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Kaloyan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

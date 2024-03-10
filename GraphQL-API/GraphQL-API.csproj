@@ -14,6 +14,7 @@
     <PackageReference Include="GraphQL.Server.Ui.Playground" Version="7.7.1" />
     <PackageReference Include="MongoDB.Driver" Version="2.24.0" />
     <PackageReference Include="MongoDB.Driver.Core" Version="2.24.0" />
+    <PackageReference Include="Splat" Version="14.8.12" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 

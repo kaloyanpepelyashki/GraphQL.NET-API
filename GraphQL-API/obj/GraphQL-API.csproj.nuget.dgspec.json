@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj": {}
+    "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj": {
+    "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj",
+        "projectUniqueName": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj",
         "projectName": "GraphQL-API",
-        "projectPath": "c:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj",
+        "projectPath": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL-API.csproj",
         "packagesPath": "C:\\Users\\Kaloyan\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\obj\\",
+        "outputPath": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,6 +69,10 @@
             "MongoDB.Driver.Core": {
               "target": "Package",
               "version": "[2.24.0, )"
+            },
+            "Splat": {
+              "target": "Package",
+              "version": "[14.8.12, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

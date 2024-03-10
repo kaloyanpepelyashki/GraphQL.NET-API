@@ -16,7 +16,7 @@ namespace GraphQL_API.Services
         protected BooksService()
         {
             _mongoDBDao = MongoDBDao.GetInstance();
-            _databaseName = _mongoDBDao.client.GetDatabase("Books");
+            _databaseName = _mongoDBDao.client.GetDatabase("BookShelf");
         }
 
         public static BooksService GetInstance()
@@ -45,6 +45,27 @@ namespace GraphQL_API.Services
             } catch(Exception e)
             {
                 throw new Exception($"Error getting all books: {e}");
+            }
+        }
+
+        public Book GetBookByISBN(int isbn)
+        {
+            try
+            {
+                var collection = _databaseName?.GetCollection<Book>("Books");
+                var filter = Builders<Book>.Filter.Eq("ISBN", isbn);
+
+                var result = collection.Find(filter).First();
+
+                if (result != null)
+                {
+                    return result;
+                }
+
+                return null;
+            } catch(Exception e)
+            {
+                throw new Exception($"Error getting book with ISBN {isbn}: {e}");
             }
         }
     }

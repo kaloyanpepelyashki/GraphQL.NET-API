@@ -1,5 +1,14 @@
+using GraphQL.Server;
 using GraphQL.Types;
+using GraphQL_API.GraphQL;
+using GraphQL_API.GraphQL.GraphQueries;
+using GraphQL_API.GraphQL.GraphTypes;
+using GraphQL_API.Services;
+using GraphQL_API.Services.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+using Splat;
 using System.Reflection;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,14 +28,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//GraphQL registration 
-//Problem TO BE FIXED
-builder.Services.AddGraphQL(b = > b
-    .AddHttpMiddleware<ISchema>()
-    .AddSchema<PostsSchema>()
-    .AddErrorInfoProvider(options => options.ExposeExceptionStackTrace = builder.Environment.IsDevelopment())
-    .AddGraphTypes(Assembly.GetExecutingAssembly())
-    .AddSystemTextJson())
+//GraphQL service registration 
+builder.Services.AddSingleton<BooksQuery>();
+
+builder.Services.AddGraphQL(options =>
+{
+    options.EnableMetrics = true; // For example, disable in production
+}).AddSystemTextJson() // Use System.Text.Json for JSON serialization
+    .AddErrorInfoProvider(opt => opt.ExposeExceptionStackTrace = builder.Environment.IsDevelopment())
+    .AddGraphTypes(ServiceLifetime.Singleton);
+
 
 app.UseHttpsRedirection();
 

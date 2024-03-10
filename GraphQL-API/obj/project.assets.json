@@ -624,6 +624,19 @@
           }
         }
       },
+      "Splat/14.8.12": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Splat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Splat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -1812,6 +1825,26 @@
         "snappier.nuspec"
       ]
     },
+    "Splat/14.8.12": {
+      "sha512": "7dTp+hgC2CS4DqjHtgkeS7hsECbpD09ukGwxL63HVM/aih9zseIaIjWhS6sQWlWw5GDvli8bVMHeZ1dekgmuvQ==",
+      "type": "package",
+      "path": "splat/14.8.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "lib/net6.0/Splat.dll",
+        "lib/net6.0/Splat.xml",
+        "lib/net7.0/Splat.dll",
+        "lib/net7.0/Splat.xml",
+        "lib/net8.0/Splat.dll",
+        "lib/net8.0/Splat.xml",
+        "lib/netstandard2.0/Splat.dll",
+        "lib/netstandard2.0/Splat.xml",
+        "splat.14.8.12.nupkg.sha512",
+        "splat.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.4.0": {
       "sha512": "eUBr4TW0up6oKDA5Xwkul289uqSMgY0xGN4pnbOIBqCcN9VKGGaPvHX3vWaG/hvocfGDP+MGzMA0bBBKz2fkmQ==",
       "type": "package",
@@ -2280,6 +2313,7 @@
       "GraphQL.Server.Ui.Playground >= 7.7.1",
       "MongoDB.Driver >= 2.24.0",
       "MongoDB.Driver.Core >= 2.24.0",
+      "Splat >= 14.8.12",
       "Swashbuckle.AspNetCore >= 6.4.0",
       "graphiql >= 2.0.0"
     ]
@@ -2353,6 +2387,10 @@
           "MongoDB.Driver.Core": {
             "target": "Package",
             "version": "[2.24.0, )"
+          },
+          "Splat": {
+            "target": "Package",
+            "version": "[14.8.12, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

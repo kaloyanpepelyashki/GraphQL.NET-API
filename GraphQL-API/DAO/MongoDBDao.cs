@@ -16,6 +16,8 @@ namespace GraphQL_API.DAO
                 _connectionString = _configuration.GetValue<string>("MongoDB:ConnectionString");
                 client = new MongoClient(_connectionString);
 
+                Console.WriteLine($"Mongo Db connection string: {_connectionString}");
+
             } catch (Exception e)
             {
                 throw new Exception($"Error instantiating MongoDB DAO: {e}");

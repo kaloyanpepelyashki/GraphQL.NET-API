@@ -50,10 +50,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "GraphQL": {
-              "target": "Package",
-              "version": "[7.8.0, )"
-            },
             "GraphQL.Server.Transports.AspNetCore.SystemTextJson": {
               "target": "Package",
               "version": "[5.2.2, )"
@@ -61,6 +57,10 @@
             "GraphQL.Server.Ui.Playground": {
               "target": "Package",
               "version": "[7.7.1, )"
+            },
+            "HotChocolate.AspNetCore": {
+              "target": "Package",
+              "version": "[13.9.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
@@ -77,10 +77,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
-            },
-            "graphiql": {
-              "target": "Package",
-              "version": "[2.0.0, )"
             }
           },
           "imports": [

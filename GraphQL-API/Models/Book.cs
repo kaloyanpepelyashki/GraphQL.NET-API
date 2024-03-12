@@ -1,14 +1,24 @@
-﻿namespace GraphQL_API.Models
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace GraphQL_API.Models
 {
     public class Book
     {
-        public int Id { get; init; }
-        public int  ISBN { get; init; }
+        [BsonElement("_id")]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId Id { get; init; }
 
+        [BsonElement("ISBN")]
+        public string  ISBN { get; init; }
+
+        [BsonElement("bookTitle")]
         public string Title { get; set; }
 
+        [BsonElement("bookDescription")]
         public string Description { get; set; }
 
+        [BsonElement("bookAuthor")]
         public string Author { get; set; }
 
         public Book (string title, string description, string author)

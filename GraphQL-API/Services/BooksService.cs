@@ -33,7 +33,7 @@ namespace GraphQL_API.Services
         {
             try
             {
-                var collection = _databaseName?.GetCollection<Book>("Books");
+                var collection = _databaseName?.GetCollection<Book>("ReadBooks");
                 var result = collection.Find(new BsonDocument()).ToList();
 
                 if (result.Count == 0)

@@ -1,19 +1,32 @@
 ﻿using GraphQL.Types;
 using GraphQL_API.Models;
+using MongoDB.Bson;
 
 namespace GraphQL_API.GraphQL.GraphTypes
 {
-    public class GBook:ObjectGraphType<Book>
+    public class GBook: ObjectType<Book>
     {
-        public GBook()
-        {
-            Field(x => x.Id, type: typeof(IdGraphType)).Description("The Id of a book");
-            Field(x => x.ISBN, type: typeof(IntGraphType)).Description("The ISBN of a book");
-            Field(x => x.Title, type: typeof(StringGraphType)).Description("The Title of a book");
-            Field(x => x.Description, type: typeof(StringGraphType)).Description("The Description of a book");
-            Field(x => x.Author, type: typeof(StringGraphType)).Description("The Author of a book");
+       
+         protected override void Configure(IObjectTypeDescriptor<Book> descriptor)
+         {
+            descriptor
+                .Field(f => f.Id).Type<StringType>();
 
-        }
-     
+            descriptor
+                .Field(f => f.ISBN).Type<StringType>();
+
+            descriptor
+                .Field(f => f.Title).Type<StringType>();
+
+            descriptor
+                .Field(f => f.Author).Type<StringType>();
+
+            descriptor
+                .Field(f => f.Description).Type<StringType>();
+         }
+   
+
     }
-}
+     
+ }
+

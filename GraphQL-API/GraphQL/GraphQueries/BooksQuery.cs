@@ -12,7 +12,7 @@ namespace GraphQL_API.GraphQL.GraphQueries
     public class BooksQuery
     {
         protected IBookService _bookService = BooksService.GetInstance();
-       public List<Book> getAllBooks()
+       public List<Book> GetAllBooks()
        {
             try
             {
@@ -29,6 +29,31 @@ namespace GraphQL_API.GraphQL.GraphQueries
                 throw new Exception($"Error getting all books : {e}");
             }
        }
+
+        public Book GetBookByTite(string title)
+        {
+            try
+            {
+                var book = _bookService.GetBookByTitle(title);
+                return book;
+
+            } catch(Exception e)
+            {
+                throw new Exception($"Error getting book: {e}");
+            }
+        }
+
+        public Book GetBookByISBN(string isbn)
+        {
+            try
+            {
+                var book = _bookService.GetBookByISBN(isbn);
+                return book;
+            } catch(Exception e)
+            {
+                throw new Exception($"Error getting book: {e}");
+            }
+        }
     }
 }
     

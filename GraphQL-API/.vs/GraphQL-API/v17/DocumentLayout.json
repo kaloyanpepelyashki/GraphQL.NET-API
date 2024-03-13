@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\graphql\\graphtypes\\gbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:graphql\\graphtypes\\gbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\graphql\\graphqueries\\querytypes\\bookquerytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:graphql\\graphqueries\\querytypes\\bookquerytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\graphql\\graphqueries\\booksquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:graphql\\graphqueries\\booksquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\dao\\mongodbdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:dao\\mongodbdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\services\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:services\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\services\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:services\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\services\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:services\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\graphql\\graphqueries\\querytypes\\bookquerytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:graphql\\graphqueries\\querytypes\\bookquerytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\services\\bookstoreadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:services\\bookstoreadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\graphql\\graphtypes\\gbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:graphql\\graphtypes\\gbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A95AF707-D4D0-4DCD-AA7A-6426D6C4DA03}|GraphQL-API.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\learning\\c#\\solo\\grpahql-api\\graphql.net-api\\graphql-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -46,8 +46,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BooksToReadService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\Services\\BooksToReadService.cs",
+              "RelativeDocumentMoniker": "Services\\BooksToReadService.cs",
+              "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\Services\\BooksToReadService.cs",
+              "RelativeToolTip": "Services\\BooksToReadService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAAEMAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:31:22.833Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 8,
@@ -58,90 +71,76 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-12T12:58:55.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-12T12:58:55.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BookQueryType.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL\\GraphQueries\\QueryTypes\\BookQueryType.cs",
               "RelativeDocumentMoniker": "GraphQL\\GraphQueries\\QueryTypes\\BookQueryType.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL\\GraphQueries\\QueryTypes\\BookQueryType.cs",
               "RelativeToolTip": "GraphQL\\GraphQueries\\QueryTypes\\BookQueryType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T11:39:00.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "BooksQuery.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL\\GraphQueries\\BooksQuery.cs",
               "RelativeDocumentMoniker": "GraphQL\\GraphQueries\\BooksQuery.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL\\GraphQueries\\BooksQuery.cs",
               "RelativeToolTip": "GraphQL\\GraphQueries\\BooksQuery.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABwAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T11:02:26.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "IBookService.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\Services\\Interfaces\\IBookService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IBookService.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\Services\\Interfaces\\IBookService.cs",
               "RelativeToolTip": "Services\\Interfaces\\IBookService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T18:39:22.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "BooksService.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\Services\\BooksService.cs",
               "RelativeDocumentMoniker": "Services\\BooksService.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\Services\\BooksService.cs",
               "RelativeToolTip": "Services\\BooksService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAACUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T18:06:26.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MongoDBDao.cs",
-              "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\DAO\\MongoDBDao.cs",
-              "RelativeDocumentMoniker": "DAO\\MongoDBDao.cs",
-              "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\DAO\\MongoDBDao.cs",
-              "RelativeToolTip": "DAO\\MongoDBDao.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T17:28:24.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "GBook.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL\\GraphTypes\\GBook.cs",
               "RelativeDocumentMoniker": "GraphQL\\GraphTypes\\GBook.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\GraphQL\\GraphTypes\\GBook.cs",
               "RelativeToolTip": "GraphQL\\GraphTypes\\GBook.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAIwBUAAAA5AAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAIwAoAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T17:13:29.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
@@ -154,13 +153,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Learning\\C#\\Solo\\GrpahQL-API\\GraphQL.NET-API\\GraphQL-API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T14:11:50.252Z",
               "EditorCaption": ""

@@ -3,48 +3,40 @@ using GraphQL_API.Models;
 using GraphQL_API.Services.Interfaces;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using System.Collections;
 
 namespace GraphQL_API.Services
 {
-    public class BooksService:IBookService
+    public class BooksToReadService:IBookService
     {
-        private static BooksService instance;
+        private static BooksToReadService intstance;
         protected MongoDBDao _mongoDBDao;
-        protected IMongoDatabase _databaseName;
+        protected IMongoDatabase _database;
+        protected IMongoCollection<Book> _collection;
 
-        protected BooksService()
+        protected BooksToReadService() 
         {
             _mongoDBDao = MongoDBDao.GetInstance();
-            _databaseName = _mongoDBDao.client.GetDatabase("BookShelf");
-        }
-
-        public static BooksService GetInstance()
-        {
-            if(instance == null)
-            {
-                instance = new BooksService();
-            }
-
-            return instance;
+            _database = _mongoDBDao.client.GetDatabase("BookShelf");
+            _collection = _database.GetCollection<Book>("BooksToRead");
         }
 
         public List<Book> GetAllBooks()
         {
             try
             {
-                var collection = _databaseName?.GetCollection<Book>("ReadBooks");
-                var result = collection.Find(new BsonDocument()).ToList();
 
-                if (result.Count == 0)
+                var result = _collection.Find(new BsonDocument()).ToList();
+
+                if(result.Count != 0)
                 {
-                    return null;
+                    return result;
                 }
 
-                return result;
+                return [];
+
             } catch(Exception e)
             {
-                throw new Exception($"Error getting all books: {e}");
+                throw new Exception($"Error getting books: {e}");
             }
         }
 
@@ -52,10 +44,9 @@ namespace GraphQL_API.Services
         {
             try
             {
-                var collection = _databaseName?.GetCollection<Book>("ReadBooks");
                 var filter = Builders<Book>.Filter.Eq("ISBN", isbn);
+                var result = _collection.Find(filter).First();
 
-                var result = collection.Find(filter).First();
 
                 if (result != null)
                 {
@@ -65,7 +56,7 @@ namespace GraphQL_API.Services
                 return null;
             } catch(Exception e)
             {
-                throw new Exception($"Error getting book with ISBN {isbn}: {e}");
+                throw new Exception($"Error getting book with ISBN: {isbn}: {e}");
             }
         }
 
@@ -73,10 +64,8 @@ namespace GraphQL_API.Services
         {
             try
             {
-                var collection = _databaseName.GetCollection<Book>("ReadBooks");
                 var filter = Builders<Book>.Filter.Eq("bookTitle", title);
-
-                var result = collection.Find(filter).First();
+                var result = _collection.Find(filter).First();
 
                 if(result != null)
                 {
@@ -84,10 +73,8 @@ namespace GraphQL_API.Services
                 }
 
                 throw new Exception($"No book with the title {title} was found");
-
-            } catch(Exception e) {
-
-
+            } catch(Exception e)
+            {
                 throw new Exception($"Error getting {title}: {e}");
             }
         }

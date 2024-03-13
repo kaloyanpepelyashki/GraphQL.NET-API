@@ -5,7 +5,7 @@ using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddGraphQLServer().AddQueryType<BookQueryType>();
+builder.Services.AddGraphQLServer().AddQueryType<BookQueryType>().AddTypeExtension<BooksToReadQueryType>();
 
 // Add services to the container.
 builder.Services.AddControllers();

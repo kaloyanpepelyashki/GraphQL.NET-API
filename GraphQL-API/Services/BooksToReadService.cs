@@ -8,7 +8,7 @@ namespace GraphQL_API.Services
 {
     public class BooksToReadService:IBookService
     {
-        private static BooksToReadService intstance;
+        private static BooksToReadService instance;
         protected MongoDBDao _mongoDBDao;
         protected IMongoDatabase _database;
         protected IMongoCollection<Book> _collection;
@@ -18,6 +18,16 @@ namespace GraphQL_API.Services
             _mongoDBDao = MongoDBDao.GetInstance();
             _database = _mongoDBDao.client.GetDatabase("BookShelf");
             _collection = _database.GetCollection<Book>("BooksToRead");
+        }
+
+        public static BooksToReadService GetInstance()
+        {
+            if(instance == null)
+            {
+                instance = new BooksToReadService();
+            }
+
+            return instance;
         }
 
         public List<Book> GetAllBooks()

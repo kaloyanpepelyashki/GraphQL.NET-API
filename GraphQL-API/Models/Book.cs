@@ -21,8 +21,9 @@ namespace GraphQL_API.Models
         [BsonElement("bookAuthor")]
         public string Author { get; set; }
 
-        public Book (string title, string description, string author)
+        public Book (string isbn, string title, string description, string author)
         {
+            ISBN = isbn;
             Title = title;
             Description = description;
             Author = author;

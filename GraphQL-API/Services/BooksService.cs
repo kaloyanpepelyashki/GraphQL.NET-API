@@ -11,12 +11,14 @@ namespace GraphQL_API.Services
     {
         private static BooksService instance;
         protected MongoDBDao _mongoDBDao;
-        protected IMongoDatabase _databaseName;
+        protected IMongoDatabase _database;
+        protected IMongoCollection<Book> _collection;
 
         protected BooksService()
         {
             _mongoDBDao = MongoDBDao.GetInstance();
-            _databaseName = _mongoDBDao.client.GetDatabase("BookShelf");
+            _database = _mongoDBDao.client.GetDatabase("BookShelf");
+            _collection = _database.GetCollection<Book>("ReadBooks");
         }
 
         public static BooksService GetInstance()
@@ -29,12 +31,15 @@ namespace GraphQL_API.Services
             return instance;
         }
 
+        /** 
+       * Gets all books and returns a list of Book objects
+       */ 
         public List<Book> GetAllBooks()
         {
             try
             {
-                var collection = _databaseName?.GetCollection<Book>("ReadBooks");
-                var result = collection.Find(new BsonDocument()).ToList();
+                
+                var result = _collection.Find(new BsonDocument()).ToList();
 
                 if (result.Count == 0)
                 {
@@ -47,15 +52,17 @@ namespace GraphQL_API.Services
                 throw new Exception($"Error getting all books: {e}");
             }
         }
-
+        /**
+      * Gets a book by isbn and returns a Book object, accepts a parameter of type string title
+      */
         public Book GetBookByISBN(string isbn)
         {
             try
             {
-                var collection = _databaseName?.GetCollection<Book>("ReadBooks");
+               
                 var filter = Builders<Book>.Filter.Eq("ISBN", isbn);
 
-                var result = collection.Find(filter).First();
+                var result = _collection.Find(filter).First();
 
                 if (result != null)
                 {
@@ -68,15 +75,17 @@ namespace GraphQL_API.Services
                 throw new Exception($"Error getting book with ISBN {isbn}: {e}");
             }
         }
-
+        /**
+       * Gets a book by title and returns a Book object, accepts a parameter of type string title
+       */
         public Book GetBookByTitle(string title)
         {
             try
             {
-                var collection = _databaseName.GetCollection<Book>("ReadBooks");
+             
                 var filter = Builders<Book>.Filter.Eq("bookTitle", title);
 
-                var result = collection.Find(filter).First();
+                var result = _collection.Find(filter).First();
 
                 if(result != null)
                 {
@@ -89,6 +98,28 @@ namespace GraphQL_API.Services
 
 
                 throw new Exception($"Error getting {title}: {e}");
+            }
+        }
+
+        /**
+         * Inserts a book into the BooksToRead collection
+         */
+        public async Task<bool> InsertBook(Book newBook)
+        {
+            try
+            {
+                var bookMatch = await _collection.Find(book => book.Title == newBook.Title && book.Author == newBook.Author).FirstOrDefaultAsync();
+
+                if(bookMatch == null)
+                {
+                    await _collection.InsertOneAsync(newBook);
+                    return true;
+                }
+
+                throw new Exception("Book already exists");
+            } catch(Exception e)
+            {
+                throw new Exception($"Error inserting book: {e}");
             }
         }
     }

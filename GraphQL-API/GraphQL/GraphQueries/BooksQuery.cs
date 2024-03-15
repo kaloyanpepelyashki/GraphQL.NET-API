@@ -12,8 +12,8 @@ namespace GraphQL_API.GraphQL.GraphQueries
     public class BooksQuery
     {
         protected IBookService _bookService = BooksService.GetInstance();
-       public List<Book> GetAllBooks()
-       {
+        public List<Book> GetAllBooks()
+        {
             try
             {
                 var books = _bookService.GetAllBooks();
@@ -24,11 +24,12 @@ namespace GraphQL_API.GraphQL.GraphQueries
                 }
 
                 return [];
-            } catch(Exception e)
+            }
+            catch (Exception e)
             {
                 throw new Exception($"Error getting all books : {e}");
             }
-       }
+        }
 
         public Book GetBookByTite(string title)
         {
@@ -37,7 +38,8 @@ namespace GraphQL_API.GraphQL.GraphQueries
                 var book = _bookService.GetBookByTitle(title);
                 return book;
 
-            } catch(Exception e)
+            }
+            catch (Exception e)
             {
                 throw new Exception($"Error getting book: {e}");
             }
@@ -49,11 +51,11 @@ namespace GraphQL_API.GraphQL.GraphQueries
             {
                 var book = _bookService.GetBookByISBN(isbn);
                 return book;
-            } catch(Exception e)
+            }
+            catch (Exception e)
             {
                 throw new Exception($"Error getting book: {e}");
             }
         }
     }
 }
-    

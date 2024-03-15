@@ -9,8 +9,8 @@ namespace GraphQL_API.Services.Interfaces
 
         public List<Book> GetAllBooks();
         public Book GetBookByISBN(string isbn);
-
         public Book GetBookByTitle(string title);
+        public Task<bool> InsertBook(Book newBook);
 
     }
 }

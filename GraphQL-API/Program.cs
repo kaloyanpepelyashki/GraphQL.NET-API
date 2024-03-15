@@ -1,3 +1,4 @@
+using GraphQL_API.GraphQL.GraphMutations.MutationsTypes;
 using GraphQL_API.GraphQL.GraphQueries.QueryTypes;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
@@ -5,7 +6,7 @@ using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddGraphQLServer().AddQueryType<BookQueryType>().AddTypeExtension<BooksToReadQueryType>();
+builder.Services.AddGraphQLServer().AddQueryType<BookQueryType>().AddTypeExtension<BooksToReadQueryType>().AddMutationType<ReadBooksMutation>();
 
 // Add services to the container.
 builder.Services.AddControllers();
